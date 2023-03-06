@@ -36,13 +36,14 @@ public class ThreadVetor extends Thread
 		}
 		TmpF = System.nanoTime();
 		TmpTT = TmpF - TmpI;
+		TmpTT = TmpTT/Math.pow(10, 9);
 		if (Num%2 == 0)
 		{
-			System.out.println("Tempo do for: "+TmpTT);
+			System.out.println("Tempo do for: "+TmpTT+"s.");
 		}
 		else
 		{
-			System.out.println("Tempo do foreach: "+TmpTT);
+			System.out.println("Tempo do foreach: "+TmpTT+"s.");
 		}
 	}
 }
